@@ -61,7 +61,8 @@ def insert_recipe():
     recipes = mongo.db.Cuisine
     recipes.insert_one(request.form.to_dict())
 
-    return render_template('recipes.html', recipe=recipes)
+
+    return render_template('recipes.html', recipes=recipes)
 
 @app.route('/recipes')
 def recipes():
