@@ -1,64 +1,53 @@
 <link rel="stylesheet" href="../static/css/style.css">{% extends 'base.html'%} {% block content %}
-
-
-
-
-
-
 <br> <br>
-
 <div class="row Recipe-Top">
     <div class="col-sm-6">
-    <div class=" ">
-  <img src="{{ recipe.Image }}" class="card-img-top" alt="...">
+        <div class=" ">
+            <img src="{{ recipe.Image }}" class="card-img-top" alt="...">
+        </div>
     </div>
-    </div>
-
     <div class="col-sm-6">
-      <div class="I">
-<div class="card-body">
-<div class="card-recipe " style="max-width: 18rem;">
-  <h3 >{{ recipe.Name }}</h3>
-  <div class="card-body-recipe">
-    <p>{{ recipe.Description }}</p>
-    <p class="card-text">Time(minutes) : {{ recipe.Time}}</p>
-  </div>
+        <div class="I">
+            <div class="card-body">
+                <div class="card-recipe " style="max-width: 18rem;">
+                    <h3>{{ recipe.Name }}</h3>
+                    <div class="card-body-recipe">
+                        <p>{{ recipe.Description }}</p>
+                        <p class="card-text">Time(minutes) : {{ recipe.Time}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-    </div>
-      </div>
-    </div>
-  </div>
-
 <div class="row">
-  <div class="col-12 col-sm-6 Recipe-Instructions">
-    <div class="I">
-      <div class="card-body">
-        <h3 class="card-title">Instructions</h3>
-        <p style="white-space: pre-wrap" class="card-text">{{ recipe.Instructions }}</p>
+    <div class="col-12 col-sm-6 Recipe-Instructions">
+        <div class="I">
+            <div class="card-body">
+                <h3 class="card-title">Instructions</h3>
+                <p style="white-space: pre-wrap" class="card-text">{{ recipe.Instructions }}</p>
 
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
     <br> <br>
-  <div class="col-12 col-sm-6 ">
-    <div class="I">
-      <div class="card-body">
-        <h3 class="card-title">Ingredients</h3>
-        <p style="white-space: pre-wrap" class="card-text">{{ recipe.Ingredients }}</p>
+    <div class="col-12 col-sm-6 ">
+        <div class="I">
+            <div class="card-body">
+                <h3 class="card-title">Ingredients</h3>
+                <p style="white-space: pre-wrap" class="card-text">{{ recipe.Ingredients }}</p>
 
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
-
 <div class="row">
     <div class="col">
-<a href="{{ url_for('delete_recipe', object_id= recipe._id) }}">
-        <button type="button" class="btn btn-outline-danger btn-lg buttons">DELETE</button>
-</a>
-
-      <a href="{{ url_for('edit_recipe', object_id= recipe._id) }}">
-     <button type="button" class="btn btn-outline-success btn-lg buttons">EDIT</button>
+        <a href="{{ url_for('delete_recipe', object_id= recipe._id) }}">
+            <button type="button" class="btn btn-outline-danger btn-lg buttons">DELETE</button>
+        </a>
+        <a href="{{ url_for('edit_recipe', object_id= recipe._id) }}">
+            <button type="button" class="btn btn-outline-success btn-lg buttons">EDIT</button>
         </a>
     </div>
 </div>

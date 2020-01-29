@@ -39,3 +39,14 @@ will need to be chosen by clicking on the "CHECK ME OUT!" button. The recipe wil
 * Bootstrap
 * Python
 * MongoDB
+
+###Testing 
+
+I have done many different tests on the site to make sure that it is fully
+functioning. 
+
+###### Adding a new recipe:
+1 Click on the "Add Recipe" option on the navbar. 
+
+
+
