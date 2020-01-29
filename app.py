@@ -22,19 +22,15 @@ mongo = PyMongo(app)
 def homepage():
     return render_template("index.html")
 
-
-
 @app.route('/recipe/<object_id>')
 def recipe(object_id):
     recipe = mongo.db.Cuisine.find_one({"_id": ObjectId(object_id)})
     return render_template('recipe.html', recipe=recipe)
 
-
 @app.route('/edit_recipe/<object_id>')
 def edit_recipe(object_id):
     recipe = mongo.db.Cuisine.find_one({"_id": ObjectId(object_id)})
     return render_template('edit_recipe.html', recipe=recipe)
-
 
 @app.route('/edited_recipe/<object_id>', methods=['POST'])
 def edited_recipe(object_id):
@@ -51,36 +47,30 @@ def edited_recipe(object_id):
     recipe = mongo.db.Cuisine.find_one({"_id": ObjectId(object_id)})
     return render_template('recipe.html', recipe=recipe)
 
-
 @app.route('/delete_recipe/<object_id>')
 def delete_recipe(object_id):
     mongo.db.Cuisine.remove({'_id': ObjectId(object_id)})
     return render_template('recipes.html')
 
-
 @app.route('/addrecipe')
 def add_recipe():
     return render_template('add_recipe.html')
-
 
 @app.route('/insert_recipe', methods=['POST'])
 def insert_recipe():
     recipes = mongo.db.Cuisine
     recipes.insert_one(request.form.to_dict())
-    return render_template('recipes.html')
 
+    return render_template('recipes.html', recipe=recipes)
 
 @app.route('/recipes')
 def recipes():
     recipes = mongo.db.Cuisine.find()
     return render_template("recipes.html", recipes=recipes)
 
-
 @app.route('/home')
 def home():
     return render_template("index.html")
-
-
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',
