@@ -1,0 +1,20 @@
+{% extends 'base.html'%} {% block content %}
+
+
+<div class="jumbotron card card-image" style="background-image: url({{ url_for('static', filename='Images/fruit-background.jpg') }})">
+  <div class="text-white text-center py-5 px-4">
+    <div>
+      <h1 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>Freds Amazing Selection of Recipes</strong></h1>
+      <p class="">
+          This site contains some amazing recipe from all around the world. You can also add and edit the recipes as you like!
+          Especially useful for times when you don't know what to make. Check out our recipes by clicking the button below
+
+      </p>
+      <a  href ="{{ url_for('recipes') }}" class="btn btn-success"> RECIPES</a>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
+

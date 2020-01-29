@@ -1,0 +1,49 @@
+{% extends 'base.html'%} {% block content %}
+<br>
+<div class="container">
+    <form action="{{ url_for('insert_recipe') }}" method="POST" >
+        <div class="form-row top">
+            <div class="col form-box top-input-box">
+                <label for="exampleFormControlInput1">Recipe Name</label>
+                <input type="text" class="form-control top-input-label round I" id="exampleFormControlInput1" name="Name"
+                       required>
+            </div>
+        </div>
+        <div class="form-row top">
+            <div class="col form-box top-input-box">
+                <label for="exampleFormControlInput1">Time to Make (in minutes)</label>
+                <input type="number" class="form-control top-input-label round I" id="exampleFormControlInput1"
+                       name="Time" required>
+            </div>
+        </div>
+        <div class="form-row bottom">
+            <div class="col">
+                <label for="exampleFormControlTextarea1">Recipe Description</label>
+                <textarea class="form-control I" id="exampleFormControlTextarea1" rows="3" name="Description"></textarea>
+            </div>
+        </div>
+        <div class="form-row bottom">
+            <div class="col ">
+                <label for="exampleFormControlTextarea1">Instructions</label>
+                <textarea class="form-control I" id="exampleFormControlTextarea1" rows="10"
+                          name="Instructions"></textarea>
+            </div>
+        </div>
+        <div class="form-row bottom">
+            <div class="col ">
+                <label for="exampleFormControlTextarea1">Ingredients</label>
+                <textarea class="form-control I " id="exampleFormControlTextarea1" rows="10" name="Ingredients"></textarea>
+            </div>
+        </div>
+
+        <div class="form-row top">
+            <div class="col form-box top-input-box">
+                <label for="exampleFormControlInput1">Link of Image</label>
+                <input type="text" class="form-control top-input-label round I" id="exampleFormControlInput1" name="Image"
+                       required>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,120 @@
+body {
+    background-color: #e6ffe6 !important;
+}
+.navbar-dark{
+    background-color: #388e3c !important
+}
+.card{
+    margin : 2%;
+    border: 5px;
+}
+.recipes_button{
+    text-align: center !important;
+}
+.btn{
+    text-align: center; !important;
+    float: none;
+}
+/* -------------------------------------------------ADDING FORM PAGE -------------------------*/
+
+.top-input-label{
+    width:35%;
+}
+.top-input-box {
+    margin-top: 0.5%;
+}
+
+.top-input-box{
+    margin-top: 0.5%;
+    width:35%;
+}
+.btn-primary{
+    margin-top: 0.5%;
+}
+.bottom{
+    padding-top : 0.5%;
+}
+.header1{
+    text-align: center;
+}
+input, label {
+    display:block;
+}
+label{
+    margin-top: 0.25%;
+}
+.round
+{
+    border-radius:2%;
+}
+.elegant-color{
+    background-color: #2e2e2e !important;
+}
+
+.Ingredients
+{
+    display: block !important;
+}
+/* -------------------------------------------------RECIPES PAGE -------------------------*/
+.recipes{
+    padding-bottom : 5%;
+}
+.card {
+    border-style: solid !important;
+    height: 100% !important;
+}
+/* -------------------------------------------------RECIPE PAGE -------------------------*/
+
+.I {
+    border-style: solid;
+!important;
+    border-radius: 5px !important;
+    border-color: #388e3c !important;
+    background-color: white !important;
+}
+.buttons{
+    float:right;
+    background-color: white !important;
+}
+.btn-outline-danger, .btn-outline-success
+{
+    background-color: white !important;
+}
+.Recipe-Top{
+    margin-bottom: 5%;
+}
+.Recipe-Instructions
+{
+margin-bottom: 5%;
+}
+
+@media screen and (min-width: 576px)
+{
+    .Recipe-Instructions
+{
+margin-bottom: 0;
+}
+  }
+/* -------------------------------------------------RECIPES PAGE -------------------------*/
+.recipe-center
+{
+    text-align: center;
+}
+
+.recipes-button{
+    background-color: #adad85;
+}
+/* -------------------------------------------------Footer -------------------------*/
+.footer-background
+{
+    background-color:  #388e3c
+	    !important;
+}
+.page-footer{
+    height:5%;
+}
+
+
+
+
+
