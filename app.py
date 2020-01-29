@@ -18,6 +18,11 @@ app.config[
 # app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 mongo = PyMongo(app)
 
+@app.route('/')
+def homepage():
+    return render_template("index.html")
+
+
 
 @app.route('/recipe/<object_id>')
 def recipe(object_id):
@@ -75,10 +80,9 @@ def recipes():
 def home():
     return render_template("index.html")
 
-@app.route('/')
-def homepage():
-    return render_template("index.html")
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0',
+            port=(os.environ.get('PORT')),
+            debug=True)
