@@ -50,7 +50,8 @@ def edited_recipe(object_id):
 @app.route('/delete_recipe/<object_id>')
 def delete_recipe(object_id):
     mongo.db.Cuisine.remove({'_id': ObjectId(object_id)})
-    return render_template('recipes.html')
+    recipes1 = mongo.db.Cuisine.find()
+    return render_template('recipes.html', recipes=recipes1)
 
 @app.route('/addrecipe')
 def add_recipe():
@@ -60,9 +61,8 @@ def add_recipe():
 def insert_recipe():
     recipes = mongo.db.Cuisine
     recipes.insert_one(request.form.to_dict())
-
-
-    return render_template('recipes.html', recipes=recipes)
+    recipes1 = mongo.db.Cuisine.find()
+    return render_template('recipes.html', recipes=recipes1)
 
 @app.route('/recipes')
 def recipes():
