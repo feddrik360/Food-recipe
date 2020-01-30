@@ -15,7 +15,9 @@
     <!-- Text -->
     <p class="card-text"> {{ recipe.Description }}</p>
     <!-- Button -->
-    <a href="{{ url_for('recipe', object_id= recipe._id) }}" class="btn aqua-gradient">Check Me Out!</a></div>
+    <div class="card-footer">
+    <a href="{{ url_for('recipe', object_id= recipe._id) }}" class="btn aqua-gradient">Check Me Out!</a>
+  </div>
 </div>
   </div>
 <!-- Card -->
@@ -23,3 +25,4 @@
   </div>
 <!-- Card deck -->
 {% endblock %}
+</div>
