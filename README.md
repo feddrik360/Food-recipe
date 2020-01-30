@@ -8,10 +8,11 @@ but is not too sure on what recipe to make. This site is very good
 for these type of users as they will have a wide range of recipes to select from.
 The user will have full access to all the ingredients, instructions and an image
 so that they know exactly what to and what the recipe is meant to look like.
-If the user decides that they would like to change something about the recipe, they would 
-be able to do so as the website does allow each recipe to be edited.
+If the user decides that they would like to change something about the recipe,
+they would be able to do so as the website allows each recipe to be modified through the ‘EDIT’ button at the bottom of the recipe.
 
-###Features
+
+### Features
 Add a recipe - This can be done by clicking on the "Add Recipe"
 option on the navbar.
 
@@ -55,7 +56,7 @@ it is still part of the recipes on the recipes page.
 
 ###### Editing a recipe:
 I have checked this by clicking on the "EDIT" button and changing some of the
-information on the input boxes. Afterward, I clicked on "UPDATE" and checked to see
+information on the input boxes. Then, I clicked on "UPDATE" and checked to see
 if the information I put in had been changed or not.
 
 ###### Viewing a recipe:
@@ -63,17 +64,17 @@ I have checked this by clicking on one of the recipes on the recipes page and ma
 sure that all the information is on there.
 
 ###### Seeing if the navbar collapses on smaller screens:
-I checked this through google chrome developer tools.
+I checked this through Google Chrome Developer tools.
 
 I have also made sure that the website works on different browsers such as Microsoft Edge,
-Firefox, and Google Chrome.
+Firefox,Safari and Google Chrome.
 
 Furthermore, I have also tried my site on different screen sizes via the developer
 tools on Google Chrome.
 
 ### Deployment
 
-I started of deploying my site on Heroku by commiting everything to my repositary :
+I started of deploying my site on Heroku by commiting everything to my repository :
 
 1. git init 
 2. git add .
@@ -103,7 +104,7 @@ https://recipewebsite123.herokuapp.com/
 
 ###### Content
 
-I got the content and images of the recipes from BBC Good Food.
+I got the content and images of the recipes from BBC Good Food a.
 
 ###### Acknowledgement
 
