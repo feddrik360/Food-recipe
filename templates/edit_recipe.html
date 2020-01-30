@@ -2,17 +2,17 @@
 <br>
 <div class="container">
     <form action="{{ url_for('edited_recipe', object_id= recipe._id) }}" method="POST">
-        <div class="form-row top">
+        <div class="form-row">
             <div class="col form-box top-input-box">
                 <label for="exampleFormControlInput1">Recipe Name</label>
-                <input type="text" class="form-control top-input-label round I" id="exampleFormControlInput1"
+                <input type="text" class="form-control I" id="exampleFormControlInput1"
                        name="Name" value="{{ recipe.Name }}">
             </div>
         </div>
-        <div class="form-row top">
+        <div class="form-row">
             <div class="col form-box top-input-box">
                 <label for="exampleFormControlInput1">Time to Make (in minutes)</label>
-                <input type="number" class="form-control top-input-label round I" id="exampleFormControlInput1"
+                <input type="number" class="form-control I" id="exampleFormControlInput1"
                        name="Time" value="{{ recipe.Time }}" required>
             </div>
         </div>
@@ -34,10 +34,10 @@
                 <textarea class="form-control I" id="exampleFormControlTextarea1" rows="10" name="Ingredients"> {{ recipe.Ingredients }}</textarea>
             </div>
         </div>
-        <div class="form-row top">
+        <div class="form-row">
             <div class="col form-box top-input-box">
                 <label for="exampleFormControlInput1">Link of Image</label>
-                <input type="text" class="form-control top-input-label round I" id="exampleFormControlInput1"
+                <input type="text" class="form-control round I" id="exampleFormControlInput1"
                        name="Image" value="{{ recipe.Image }}" required>
             </div>
         </div>

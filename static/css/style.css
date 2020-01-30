@@ -11,41 +11,13 @@ body {
     border: 5px;
 }
 
-.recipes_button {
-    text-align: center !important;
-}
-
-.btn {
-    text-align: center;
-!important;
-    float: none;
-}
-
 /* -------------------------------------------------ADDING FORM PAGE -------------------------*/
-
-.top-input-label {
-    width: 35%;
-}
-
 .top-input-box {
-    margin-top: 0.5%;
-}
-
-.top-input-box {
-    margin-top: 0.5%;
-    width: 35%;
-}
-
-.btn-primary {
     margin-top: 0.5%;
 }
 
 .bottom {
     padding-top: 0.5%;
-}
-
-.header1 {
-    text-align: center;
 }
 
 input, label {
@@ -56,17 +28,10 @@ label {
     margin-top: 0.25%;
 }
 
-.round {
-    border-radius: 2%;
-}
-
 .elegant-color {
     background-color: #2e2e2e !important;
 }
 
-.Ingredients {
-    display: block !important;
-}
 
 /* -------------------------------------------------RECIPES PAGE -------------------------*/
 .recipes {
@@ -90,11 +55,6 @@ label {
 
 .buttons {
     float: right;
-    background-color: white !important;
-}
-
-.btn-outline-danger, .btn-outline-success {
-    background-color: white !important;
 }
 
 .Recipe-Top {
@@ -111,15 +71,6 @@ label {
     }
 }
 
-/* -------------------------------------------------RECIPES PAGE -------------------------*/
-.recipe-center {
-    text-align: center;
-}
-
-.recipes-button {
-    background-color: #adad85;
-}
-
 /* -------------------------------------------------Footer -------------------------*/
 .footer-background {
     background-color: #388e3c !important;
@@ -128,8 +79,3 @@ label {
 .page-footer {
     height: 5%;
 }
-
-
-
-
-

@@ -2,20 +2,14 @@
 <br> <br>
 <div class="row Recipe-Top">
     <div class="col-sm-6">
-        <div class=" ">
-            <img src="{{ recipe.Image }}" class="card-img-top" alt="...">
-        </div>
+        <img src="{{ recipe.Image }}" class="card-img-top" alt="Recipe Image">
     </div>
     <div class="col-sm-6">
         <div class="I">
             <div class="card-body">
-                <div class="card-recipe " style="max-width: 18rem;">
-                    <h3>{{ recipe.Name }}</h3>
-                    <div class="card-body-recipe">
-                        <p>{{ recipe.Description }}</p>
-                        <p class="card-text">Time(minutes) : {{ recipe.Time}}</p>
-                    </div>
-                </div>
+                <h3>{{ recipe.Name }}</h3>
+                <p>{{ recipe.Description }}</p>
+                <p class="card-text">Time(minutes) : {{ recipe.Time}}</p>
             </div>
         </div>
     </div>
@@ -52,13 +46,3 @@
     </div>
 </div>
 {% endblock %}
-
-
-
-
-
-
-
-
-
-
