@@ -104,7 +104,7 @@ https://recipewebsite123.herokuapp.com/
 
 ###### Content
 
-I got the content and images of the recipes from BBC Good Food a.
+I got the content and images of the recipes from BBC Good Food.
 
 ###### Acknowledgement
 
