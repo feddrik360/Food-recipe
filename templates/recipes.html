@@ -1,28 +1,27 @@
 {% extends 'base.html'%} {% block content %}
-<!-- Card -->
 <br> <br>
 <div class="row">
-  {% for recipe in recipes %}
-  <div class="col-12 col-sm-6 col-md-4 col-lg-3 recipes">
-    <!-- Card -->
-<div class="card">
-  <!-- Card image -->
-  <img class="card-img-top" src="{{ recipe.Image }}" alt="Card image cap">
-  <!-- Card content -->
-  <div class="card-body">
-    <!-- Title -->
-    <h4 class="card-title"><a> {{ recipe.Name }}</a></h4>
-    <!-- Text -->
-    <p class="card-text"> {{ recipe.Description }}</p>
-    <!-- Button -->
-    <div class="card-footer">
-    <a href="{{ url_for('recipe', object_id= recipe._id) }}" class="btn aqua-gradient">Check Me Out!</a>
-  </div>
+    {% for recipe in recipes %}
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 recipes">
+        <!-- Card -->
+        <div class="card">
+            <!-- Card image -->
+            <img class="card-img-top" src="{{ recipe.Image }}" alt="Card image cap">
+            <!-- Card content -->
+            <div class="card-body">
+                <!-- Title -->
+                <h4 class="card-title"><a> {{ recipe.Name }}</a></h4>
+                <!-- Text -->
+                <p class="card-text"> {{ recipe.Description }}</p>
+            </div>
+            <div class="card-footer">
+                <a href="{{ url_for('recipe', object_id= recipe._id) }}" class="btn aqua-gradient">Check Me Out!</a>
+            </div>
+        </div>
+        <!-- Card -->
+    </div>
+    {% endfor %}
 </div>
-  </div>
-<!-- Card -->
-  {% endfor %}
-  </div>
-<!-- Card deck -->
 {% endblock %}
 </div>
+
